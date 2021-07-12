@@ -29,8 +29,6 @@ export const PokeView = () => {
 
   return (
     <>
-      <h1>Poke Cards</h1>
-      <h2>There are {pokemonList.length} Pokemons in your pokedex</h2>
       <PokeCardGrid pokemonList={ pokemonList } />
     </>
   )

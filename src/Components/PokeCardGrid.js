@@ -4,13 +4,7 @@ import { PokeCardItem } from './PokeCardItem';
 
 export const PokeCardGrid = ({ pokemonList}) => {
 
-  const [pokemons, setPokemons] = useState( pokemonList = JSON.parse( localStorage.getItem('pokemons') ));
-
-
-  // localStorage.setItem('pokemons', JSON.stringify(defaultList));
-
-  // const pokemonList = JSON.parse( localStorage.getItem('pokemons') );
-  // setPokemons( pokemon);
+  const [pokemons, setPokemons] = useState( JSON.parse( localStorage.getItem('pokemons') ) || pokemonList);
 
   useEffect(() => {
     console.log('hello pattss');
@@ -21,6 +15,8 @@ export const PokeCardGrid = ({ pokemonList}) => {
 
   return (
     <div>
+      <h1>Poke Cards</h1>
+      <h2>There are {pokemonList.length} Pokemons in your pokedex</h2>
       <div className="card-grid">
         {
           pokemons.map( (pokemon) => (
