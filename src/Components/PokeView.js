@@ -18,7 +18,13 @@ export const PokeView = () => {
       id: 2,
     name: 'Bulbasaur',
     url: 'https://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png'
+    },
+    {
+      id: 3,
+    name: 'Charizard',
+    url: 'https://assets.pokemon.com/assets/cms2/img/pokedex/full/006.png'
     }
+
   ];
 
   return (
