@@ -40,7 +40,7 @@ const handleCancel = () =>{
     <>
       {
         showModal ? (
-          <Background>
+          <Background >
             <ModalWrapper showModal={showModal}>
               <ModalContent>
                   <div className="field">

@@ -13,13 +13,16 @@ input {
   font-size: 1.2rem;
 }
 
+
 .card-grid {
-  margin-top: 50px;
+  margin-top: 8vh;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   background-color: #49afa8;
-  padding: 50px 150px;
+  padding: 50px 15vh;
+  padding-left: 22vh;
+  border-radius: 10px;
 }
 
 .card {
@@ -32,18 +35,11 @@ input {
   overflow: hidden;
   text-align: center;
   width: 20%;
+  height: 18vh;
   z-index: 0;
 }
 
-@media (max-width: 600px)  {
-  .card {
-    width: 35%;
-    height: 220px;
-  }
-  .card-grid {
-    z-index: 0;
-  }
-}
+
 .card img {
   max-height: 170px;
   padding: 10px;
@@ -66,15 +62,19 @@ input {
   font-size: 1rem;
 }
 .field {
-  width: 100%;
-  margin-top: 0px;
+  width: 85%;
+  margin: 0px auto;
   background: #49afa8;
-  padding: 15px;
+  padding-bottom: 25px;
   border-radius: 10px;
+  margin-top: 2vh;
+  font-weight: 700;
 }
 
 .field input {
   color: white;
+  width: 95%;
+  padding: 0.2vh 0;
 }
 
 
@@ -93,12 +93,54 @@ input {
 
 .buttons {
   display: flex;
-  align-items: center;
+  justify-content: center;
   margin-top: 50px;
   width: 100%;
 }
 
 .submitBtn {
-  margin-left:  30px;
+  margin:  0 1vw;
   width: 30%;
+  font-weight: 700;
+  font-size: 1.2em;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px)  {
+  .card-grid {
+    padding: 5% 0; 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .card {
+    width: 45vw;
+    height: 25vh;
+    padding-top: 3vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .field {
+    width: 90%;
+    padding-bottom: 3vh;
+    margin-top: 2vh;
+  }  
+  .field input {
+    color: white;
+    width: 95%;
+    padding: 0.3vh 0;
+  }
+  .field p {
+    font-size: 1.4em;
+  }
+  .buttons {
+    justify-content: space-evenly;
+  }
+  .submitBtn {
+    margin:  0 1vw;
+    width: 30vw;
+    padding: 0.7vh 0;
+    font-size: 1.4em;
+  }
 }

@@ -12,7 +12,7 @@ export const PokeCardItem = ( { name, url, pokemons, setPokemons }) => {
   
   return (
     <>
-    <button className="card animate__animated animate__fadeIn"
+    <button className="card"
     onClick={ openModal }>
         <img 
           src={ url }

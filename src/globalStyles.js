@@ -11,28 +11,39 @@ export const GlobalStyle = createGlobalStyle`
 }
 `
 export const Background = styled.div`
-  width: 70%;
+  width: 50vw;
   heigth: 100%;
   background: rgba(0, 0, 0, 0.8);
   position: fixed;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: start;
+  align-items: start;
   z-index:5;
-  margin: 0 auto;
+  margin: 0;
+  left: 25vw;
+  border-radius: 10px;
+  
+  @media (max-width: 768px) {
+    width: 90%;
+    left: 5%;
+  }
 `
 export const ModalWrapper = styled.div`
-  width: 400px;
-  height: 500px;
-  padding: 10px;
+  width: 35vw;
+  height: 60vh;
   box-shadow: 0 5px 16px rgba(0, 0, 0, 0.2);
   background: #fff;
   color: #000;
   display: grid;
   grid-template-columns: 1fr;
-  position relative;
+  position: relative;
   z-index: 10;
   border-radius: 10px;
+  margin: 10px auto;
+
+  @media (max-width: 768px) {
+    width: 90%;
+  }
 `
 
 export const ModalContent = styled.div`
@@ -40,7 +51,6 @@ export const ModalContent = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: start;
-  margin-top: 0px;
 
   p {
     margin-bottom: 0.7rem;

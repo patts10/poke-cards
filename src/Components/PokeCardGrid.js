@@ -7,7 +7,7 @@ export const PokeCardGrid = ({ pokemonList}) => {
   const [pokemons, setPokemons] = useState( pokemonList);
 
   return (
-    <>
+    <div>
       <div className="card-grid">
         {
           pokemons.map( (pokemon) => (
@@ -23,6 +23,6 @@ export const PokeCardGrid = ({ pokemonList}) => {
         key={ pokemons.length }
         setPokemons={ setPokemons } />
       </div>
-      </>
+    </div>
   )
 }
