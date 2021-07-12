@@ -19,13 +19,20 @@ input {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  background-color: #49afa8;
-  padding: 50px 15vh;
-  padding-left: 22vh;
+  /* background-color: #49afa8; */
+  background-image: url('https://i.pinimg.com/originals/34/d6/c4/34d6c4e85786971335655ecbaffb5284.png');
+  padding: 15vh 0% 15vh 10%;
+  background-position: center;
+  background-size: auto;
+  background-repeat: repeat-y;
+  /* padding-left: 10%; */
   border-radius: 10px;
 }
 
 .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   align-content: center;
   background-color: #fff;
   border: 1px solid grey;

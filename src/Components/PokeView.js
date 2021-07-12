@@ -19,7 +19,8 @@ export const PokeView = () => {
     name: 'Bulbasaur',
     url: 'https://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png'
     }
-  ]
+  ];
+
   return (
     <>
       <h1>Poke Cards</h1>
