@@ -33,6 +33,8 @@ const handleSubmit = (e) => {
 
 const handleCancel = () =>{
   setShowModal( prev => !prev);
+  setInputName('');
+  setInputUrl('');
 }
 
 

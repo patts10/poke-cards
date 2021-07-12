@@ -7,8 +7,7 @@ export const PokeCardGrid = ({ pokemonList}) => {
   const [pokemons, setPokemons] = useState( JSON.parse( localStorage.getItem('pokemons') ) || pokemonList);
 
   useEffect(() => {
-    console.log('hello pattss');
-    console.log(pokemons);
+
     localStorage.setItem('pokemons', JSON.stringify(pokemons));
 
   }, [ pokemons ])
@@ -16,7 +15,7 @@ export const PokeCardGrid = ({ pokemonList}) => {
   return (
     <div>
       <h1>Poke Cards</h1>
-      <h2>There are {pokemonList.length} Pokemons in your pokedex</h2>
+      <h2>There are {pokemons.length} Pokemons in your pokedex</h2>
       <div className="card-grid">
         {
           pokemons.map( (pokemon) => (

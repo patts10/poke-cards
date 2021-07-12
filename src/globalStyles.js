@@ -20,6 +20,7 @@ export const Background = styled.div`
   align-items: start;
   z-index:5;
   margin: 0;
+  top: 22vh;
   left: 25vw;
   border-radius: 10px;
   
